@@ -1,4 +1,0 @@
-- [No visual testing](feedback_no_visual_testing.md) — verify Godot changes with headless `--quit-after` loads only, never screenshots/mouse automation.
-- [Placeholder assets](project_placeholder_assets.md) — use PlaceHolder8/16/32.tres by size when an entity/icon has no real art yet.
-- [Git commit ownership](feedback_git_commit_ownership.md) — never `git commit`, that's the user's job; everything else in git is fair game without asking.
-- [Short comments](feedback_short_comments.md) — code comments max 2 lines; trim to the core "why", never 3+ line blocks.

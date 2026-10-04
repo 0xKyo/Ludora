@@ -28,3 +28,7 @@ New UI scenes must apply `res://Resources/ui.tres` as their theme (see the `ui-t
 ## Asset pipeline
 
 Source art lives in `Art/Source/*.aseprite`; `generate_assets.cmd` shells out to Aseprite (`-b --save-as`) to export each to a flat PNG in `Art/Generated/`. `_engine` is a symlink to the shared engine (`../Engine`, created by `setup_project.bat`); fonts for `ui.tres` come from `_engine/assets/fonts/PixelifySans`. Both assume Aseprite is installed locally; there's no CI asset build.
+
+## Verification
+
+Verify with headless loads only (no windowed game, screenshots or simulated input). Do not write custom `-s` SceneTree harnesses: autoloads do not reliably resolve when the main loop is overridden, and orphaned `Godot_*.exe` processes can hang the next headless run, so check for stray processes if a run hangs with no output.

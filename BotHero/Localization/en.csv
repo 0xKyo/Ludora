@@ -1,0 +1,10 @@
+keys,en
+UI_RUN,Run
+UI_RESET,Reset
+UI_RUNNING,Running...
+UI_GOAL_REACHED,Goal reached!
+UI_GOAL_MISSED,Didn't reach the goal
+CMD_FORWARD,Forward
+CMD_BACK,Back
+CMD_JUMP,Jump
+CMD_ATTACK,Attack

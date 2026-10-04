@@ -31,7 +31,7 @@ func _run() -> void:
 	_arena.reset()
 	_program.locked = true
 	_run_button.disabled = true
-	_status.text = "Ejecutando..."
+	_status.text = "UI_RUNNING"
 
 	var reached := false
 	var steps := _program.get_program()
@@ -55,4 +55,4 @@ func _run() -> void:
 		_arena.reset()
 		_status.text = ""
 	else:
-		_status.text = "¡Meta alcanzada!" if reached else "No llegó a la meta"
+		_status.text = "UI_GOAL_REACHED" if reached else "UI_GOAL_MISSED"

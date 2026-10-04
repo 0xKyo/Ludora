@@ -12,5 +12,13 @@ func _ready():
 		settings = Settings.new()
 		ResourceSaver.save(settings, SETTINGS_PATH)
 
+	if settings.locale != "":
+		TranslationServer.set_locale(settings.locale)
+
 func save_settings():
 	ResourceSaver.save(settings, SETTINGS_PATH)
+
+func set_locale(locale: String) -> void:
+	settings.locale = locale
+	TranslationServer.set_locale(locale)
+	save_settings()

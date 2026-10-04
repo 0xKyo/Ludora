@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_cmd")
 action = 0
-display_name = "Adelante"
+display_name = "CMD_FORWARD"
 symbol = ">"
 color = Color(0.25, 0.55, 0.9, 1)

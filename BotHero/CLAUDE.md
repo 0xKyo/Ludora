@@ -32,3 +32,9 @@ Source art lives in `Art/Source/*.aseprite`; `generate_assets.cmd` shells out to
 ## Verification
 
 Verify with headless loads only (no windowed game, screenshots or simulated input). Do not write custom `-s` SceneTree harnesses: autoloads do not reliably resolve when the main loop is overridden, and orphaned `Godot_*.exe` processes can hang the next headless run, so check for stray processes if a run hangs with no output.
+
+## Localization
+
+Every game must be localizable: no user-visible string is hardcoded. Scenes, resources and scripts use translation keys (`UI_*`, `CMD_*`, ...). `Control` text/tooltip properties (`Label.text`, `Button.text`, `tooltip_text`) take the key directly and re-translate live on locale change; use `tr()` only for strings not set on a Control property. One CSV per language lives in `Localization/` (`en.csv`, `es.csv`, each `keys,<locale>`); Godot imports each into `<locale>.<locale>.translation`, registered under `[internationalization]` in `project.godot`.
+
+The flag dropdown (`LanguageSelector`, top-right of `game.tscn`) is fed by `LanguageData` resources in `Resources/Languages/` (locale, native name, flag from `Assets/Flags/<locale>.png`). The choice persists in `Settings.locale` via `File.set_locale()`. To add a language: add `Localization/<locale>.csv` with every key, a flag PNG and a `LanguageData` `.tres`, add that `.tres` to the selector's `languages`, run `--headless --import`, and register the generated `.translation`. New keys go in every CSV.

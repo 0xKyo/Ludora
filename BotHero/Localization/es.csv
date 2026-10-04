@@ -1,0 +1,10 @@
+keys,es
+UI_RUN,Ejecutar
+UI_RESET,Reiniciar
+UI_RUNNING,Ejecutando...
+UI_GOAL_REACHED,¡Meta alcanzada!
+UI_GOAL_MISSED,No llegó a la meta
+CMD_FORWARD,Adelante
+CMD_BACK,Atrás
+CMD_JUMP,Saltar
+CMD_ATTACK,Atacar

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LanguageData" format=3]
+
+[ext_resource type="Script" path="res://Scripts/CustomResources/language_data.gd" id="1_lang"]
+[ext_resource type="Texture2D" path="res://Assets/Flags/en.png" id="2_flag"]
+
+[resource]
+script = ExtResource("1_lang")
+locale = "en"
+display_name = "English"
+flag = ExtResource("2_flag")

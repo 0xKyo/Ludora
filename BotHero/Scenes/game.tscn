@@ -10,6 +10,10 @@
 [ext_resource type="Resource" path="res://Resources/Commands/back.tres" id="8_back"]
 [ext_resource type="Resource" path="res://Resources/Commands/jump.tres" id="9_jump"]
 [ext_resource type="Resource" path="res://Resources/Commands/attack.tres" id="10_attack"]
+[ext_resource type="Script" path="res://Scripts/Game/language_selector.gd" id="11_selector"]
+[ext_resource type="Script" path="res://Scripts/CustomResources/language_data.gd" id="12_lang"]
+[ext_resource type="Resource" path="res://Resources/Languages/en.tres" id="13_en"]
+[ext_resource type="Resource" path="res://Resources/Languages/es.tres" id="14_es"]
 
 [node name="Game" type="Control"]
 layout_mode = 3
@@ -72,9 +76,22 @@ commands = Array[ExtResource("6_cmd")]([ExtResource("7_forward"), ExtResource("8
 [node name="RunButton" type="Button" parent="Layout/Controls"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Ejecutar"
+text = "UI_RUN"
 
 [node name="ResetButton" type="Button" parent="Layout/Controls"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Reiniciar"
+text = "UI_RESET"
+
+[node name="LanguageSelector" type="OptionButton" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -32.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = 20.0
+grow_horizontal = 0
+script = ExtResource("11_selector")
+languages = Array[ExtResource("12_lang")]([ExtResource("13_en"), ExtResource("14_es")])

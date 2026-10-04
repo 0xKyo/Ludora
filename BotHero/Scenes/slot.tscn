@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b47fl3eyuf1hj"]
+
+[ext_resource type="Script" path="res://Scripts/slot.gd" id="1_12ej0"]
+[ext_resource type="Theme" uid="uid://c7fc3iqaxbp1g" path="res://Resources/ui.tres" id="1_67ou1"]
+[ext_resource type="SpriteFrames" path="res://Resources/Sprites/Tile.tres" id="3_67ou1"]
+
+[node name="Slot" type="PanelContainer" unique_id=1116649754]
+offset_right = 16.0
+offset_bottom = 16.0
+theme = ExtResource("1_67ou1")
+script = ExtResource("1_12ej0")
+
+[node name="Tile" type="AnimatedSprite2D" parent="." unique_id=1384084853]
+sprite_frames = ExtResource("3_67ou1")
+animation = &"Empty"
+frame_progress = 0.43994766
+centered = false

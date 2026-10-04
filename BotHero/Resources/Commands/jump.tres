@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CommandData" format=3]
+
+[ext_resource type="Script" path="res://Scripts/Game/command_data.gd" id="1_cmd"]
+
+[resource]
+script = ExtResource("1_cmd")
+action = 2
+display_name = "Saltar"
+symbol = "^"
+color = Color(0.3, 0.75, 0.45, 1)

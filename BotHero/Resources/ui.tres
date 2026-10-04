@@ -1,0 +1,11 @@
+[gd_resource type="Theme" format=3 uid="uid://c7fc3iqaxbp1g"]
+
+[ext_resource type="FontFile" uid="uid://c7u4tj83rgwjv" path="res://_engine/assets/fonts/PixelifySans-VariableFont_wght.ttf" id="1_lbkpj"]
+
+[resource]
+default_font = ExtResource("1_lbkpj")
+default_font_size = 12
+SmallLabel/base_type = &"Label"
+SmallLabel/font_sizes/font_size = 8
+SmallestLabel/base_type = &"Label"
+SmallestLabel/font_sizes/font_size = 4

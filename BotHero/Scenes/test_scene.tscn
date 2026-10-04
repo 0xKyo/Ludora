@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://xnkgtuin00ps"]
+
+[ext_resource type="Theme" uid="uid://c7fc3iqaxbp1g" path="res://Resources/ui.tres" id="1_theme"]
+[ext_resource type="PackedScene" uid="uid://bhjwl1syxfn8y" path="res://Scenes/grid.tscn" id="2_grid"]
+[ext_resource type="Script" path="res://Scripts/test_palette.gd" id="3_palette"]
+
+[node name="TestScene" type="Control" unique_id=1610880419]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_theme")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1300813290]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="DropGrid" parent="HBoxContainer" unique_id=2047043407 instance=ExtResource("2_grid")]
+layout_mode = 2
+size_flags_vertical = 3
+grid_size = Vector2i(10, 8)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer" unique_id=1651477499]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="Palette" type="GridContainer" parent="HBoxContainer/ScrollContainer" unique_id=463802267]
+layout_mode = 2
+size_flags_horizontal = 3
+columns = 6
+script = ExtResource("3_palette")

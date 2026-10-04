@@ -1,0 +1,43 @@
+Proprietary License
+
+Copyright (c) 2026 Ludora. All rights reserved.
+
+This software, including its source code, game assets, art, audio, shaders,
+tools, scripts, data files and documentation (collectively, the "Software"),
+is proprietary and confidential. It is the exclusive property of the copyright
+holder and is protected by copyright law and international treaties.
+
+1. NO LICENSE GRANTED. No right or license is granted to any person to use,
+   copy, modify, merge, publish, distribute, sublicense, sell, host, or
+   otherwise exploit the Software, in whole or in part, except as expressly
+   authorized in a separate written agreement signed by the copyright holder.
+
+2. RESTRICTIONS. Without prior written permission from the copyright holder,
+   you may not:
+   a. copy, reproduce, or redistribute the Software or any portion of it;
+   b. modify, adapt, translate, or create derivative works based on it;
+   c. reverse engineer, decompile, or disassemble any compiled portion of it,
+      except to the extent such restriction is prohibited by applicable law;
+   d. use the Software, or any of its assets, to train machine learning or
+      artificial intelligence models;
+   e. remove or alter any copyright, trademark, or proprietary notices.
+
+3. THIRD-PARTY COMPONENTS. The Software may include third-party components
+   (for example the Godot Engine and fonts such as Pixelify Sans) that are
+   licensed under their own terms. Those components remain subject to their
+   respective licenses, and nothing in this license changes those terms.
+
+4. NO WARRANTY. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+5. LIMITATION OF LIABILITY. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE
+   FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+   CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH
+   THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+6. TERMINATION. Any unauthorized use of the Software automatically terminates
+   any permission that may otherwise have been granted, and the copyright
+   holder may pursue all remedies available under law.
+
+For licensing inquiries, contact the copyright holder.

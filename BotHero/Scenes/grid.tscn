@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bhjwl1syxfn8y"]
+
+[ext_resource type="Theme" uid="uid://bkotddqf31jbh" path="res://Resources/grid.tres" id="1_72mdp"]
+[ext_resource type="Script" path="res://Scripts/grid.gd" id="1_k8odg"]
+
+[node name="Grid" type="Panel" unique_id=1286299580]
+custom_minimum_size = Vector2(128, 96)
+offset_right = 160.0
+offset_bottom = 128.0
+theme = ExtResource("1_72mdp")
+script = ExtResource("1_k8odg")

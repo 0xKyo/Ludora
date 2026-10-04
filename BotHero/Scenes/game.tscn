@@ -1,0 +1,80 @@
+[gd_scene format=3]
+
+[ext_resource type="Theme" uid="uid://c7fc3iqaxbp1g" path="res://Resources/ui.tres" id="1_theme"]
+[ext_resource type="Script" path="res://Scripts/Game/game.gd" id="2_game"]
+[ext_resource type="Script" path="res://Scripts/Game/arena.gd" id="3_arena"]
+[ext_resource type="Script" path="res://Scripts/Game/program_bar.gd" id="4_program"]
+[ext_resource type="Script" path="res://Scripts/Game/command_palette.gd" id="5_palette"]
+[ext_resource type="Script" path="res://Scripts/Game/command_data.gd" id="6_cmd"]
+[ext_resource type="Resource" path="res://Resources/Commands/forward.tres" id="7_forward"]
+[ext_resource type="Resource" path="res://Resources/Commands/back.tres" id="8_back"]
+[ext_resource type="Resource" path="res://Resources/Commands/jump.tres" id="9_jump"]
+[ext_resource type="Resource" path="res://Resources/Commands/attack.tres" id="10_attack"]
+
+[node name="Game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_theme")
+script = ExtResource("2_game")
+
+[node name="Layout" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 4
+
+[node name="ArenaArea" type="CenterContainer" parent="Layout"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Arena" type="Control" parent="Layout/ArenaArea"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("3_arena")
+
+[node name="Status" type="Label" parent="Layout"]
+unique_name_in_owner = true
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="ProgramArea" type="CenterContainer" parent="Layout"]
+layout_mode = 2
+
+[node name="ProgramBar" type="HBoxContainer" parent="Layout/ProgramArea"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 2
+script = ExtResource("4_program")
+
+[node name="Controls" type="HBoxContainer" parent="Layout"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="Palette" type="HBoxContainer" parent="Layout/Controls"]
+layout_mode = 2
+theme_override_constants/separation = 2
+script = ExtResource("5_palette")
+commands = Array[ExtResource("6_cmd")]([ExtResource("7_forward"), ExtResource("8_back"), ExtResource("9_jump"), ExtResource("10_attack")])
+
+[node name="RunButton" type="Button" parent="Layout/Controls"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Ejecutar"
+
+[node name="ResetButton" type="Button" parent="Layout/Controls"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Reiniciar"
